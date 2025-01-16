@@ -1,0 +1,101 @@
+{
+    "nodes": [
+     {
+        "node_id": "server",
+        "node_ip": "10.0.18.10",
+        "neighbors": [
+            {"neighbor_id": "node5", "neighbor_ip": "10.0.19.1"},
+            {"neighbor_id": "node6", "neighbor_ip": "10.0.18.1"}
+        ]
+      },  
+      {
+        "node_id": "node5",
+        "node_ip": "10.0.19.1",
+        "neighbors": [
+          {"neighbor_id": "server", "neighbor_ip": "10.0.18.10"},
+          {"neighbor_id": "node1", "neighbor_ip": "10.0.17.1"},
+          {"neighbor_id": "node6", "neighbor_ip": "10.0.18.1"}
+        ]
+      },
+      {
+        "node_id": "node6",
+        "node_ip": "10.0.18.1",
+        "neighbors": [
+          {"neighbor_id": "node5", "neighbor_ip": "10.0.19.1"},
+          {"neighbor_id": "node2", "neighbor_ip": "10.0.15.1"},
+          {"neighbor_id": "node3", "neighbor_ip": "10.0.14.1"},
+          {"neighbor_id": "server", "neighbor_ip": "10.0.18.10"}
+        ]
+      },
+      {
+        "node_id": "node1",
+        "node_ip": "10.0.17.1",
+        "neighbors": [
+          {"neighbor_id": "node5", "neighbor_ip": "10.0.19.1"},
+          {"neighbor_id": "node2", "neighbor_ip": "10.0.15.1"},
+          {"neighbor_id": "pop1", "neighbor_ip": "10.0.13.2"}
+        ]
+      },
+      {
+        "node_id": "node2",
+        "node_ip": "10.0.15.1",
+        "neighbors": [
+          {"neighbor_id": "node3", "neighbor_ip": "10.0.14.1"},
+          {"neighbor_id": "node1", "neighbor_ip": "10.0.17.1"},
+          {"neighbor_id": "node6", "neighbor_ip": "10.0.18.1"},
+          {"neighbor_id": "pop1", "neighbor_ip": "10.0.13.2"},
+          {"neighbor_id": "pop2", "neighbor_ip": "10.0.8.1"}
+        ]
+      },
+      {
+        "node_id": "node3",
+        "node_ip": "10.0.14.1",
+        "neighbors": [
+          {"neighbor_id": "node6", "neighbor_ip": "10.0.18.1"},
+          {"neighbor_id": "pop2", "neighbor_ip": "10.0.8.1"}
+        ]
+      },
+      {
+        "node_id": "pop1",
+        "node_ip": "10.0.13.2",
+        "neighbors": [
+          {"neighbor_id": "node1", "neighbor_ip": "10.0.17.1"},
+          {"neighbor_id": "node2", "neighbor_ip": "10.0.15.1"},
+          {"neighbor_id": "client1", "neighbor_ip": "10.0.0.20"},
+          {"neighbor_id": "client2", "neighbor_ip": "10.0.1.20"}
+        ]
+      },
+      {
+        "node_id": "pop2",
+        "node_ip": "10.0.8.1",
+        "neighbors": [
+          {"neighbor_id": "node2", "neighbor_ip": "10.0.15.1"},
+          {"neighbor_id": "node3", "neighbor_ip": "10.0.14.1"},
+          {"neighbor_id": "client2", "neighbor_ip": "10.0.1.20"},
+          {"neighbor_id": "client3", "neighbor_ip": "10.0.5.20"}
+        ]
+      },
+      {
+        "node_id": "client1",
+        "node_ip": "10.0.0.20",
+        "neighbors": [
+          {"neighbor_id": "pop1", "neighbor_ip": "10.0.13.2"}
+        ]
+      },
+      {
+        "node_id": "client2",
+        "node_ip": "10.0.1.20",
+        "neighbors": [
+          {"neighbor_id": "pop1", "neighbor_ip": "10.0.13.2"},
+          {"neighbor_id": "pop2", "neighbor_ip": "10.0.8.1"}
+        ]
+      },
+      {
+        "node_id": "client3",
+        "node_ip": "10.0.5.20",
+        "neighbors": [
+          {"neighbor_id": "pop2", "neighbor_ip": "10.0.8.1"}
+        ]
+      }
+    ]
+  }

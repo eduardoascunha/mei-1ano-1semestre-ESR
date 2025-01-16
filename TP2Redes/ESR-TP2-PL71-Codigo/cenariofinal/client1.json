@@ -1,0 +1,9 @@
+{
+    "client_ip": "10.0.0.20",
+    "client_id": "client1",
+    "control_port": 5001,
+    "rtp_port": 3000,
+    "filme": "video.mjpeg",
+    "bootstrapper_ip": "10.0.28.10",
+    "bootstrapper_port": 8000
+}

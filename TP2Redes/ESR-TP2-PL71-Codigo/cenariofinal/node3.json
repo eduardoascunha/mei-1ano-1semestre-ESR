@@ -1,0 +1,10 @@
+{
+    "node_ip": "10.0.14.1",
+    "node_id": "node3",
+    "node_type": "node",
+    "rtsp_port": 3000,
+    "rtp_port": 3000,
+    "control_port": 5000,
+    "bootstrapper_ip": "10.0.28.10",
+    "bootstrapper_port": 8000
+}
